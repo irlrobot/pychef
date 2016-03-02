@@ -10,7 +10,8 @@ setup(
     packages = find_packages(),
     author = 'Noah Kantrowitz',
     author_email = 'noah@coderanger.net',
-    description = 'Python implementation of a Chef API client.',
+    description = 'Python implementation of a Chef API client.  This fork' \
+        'adds support for Amazon Linux by modifying the libcrypto library loaded.',
     long_description = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     license = 'BSD',
     keywords = '',

@@ -6,13 +6,17 @@ PyChef
 
 A Python API for interacting with a Chef server.
 
+About This Fork
+===============
+This fork modifies line 9 of `chef/rsa.py` to use the libcrypto found on Amazon Linux in order to support that OS.
+
 Example
 -------
 
 ::
 
     from chef import autoconfigure, Node
-    
+
     api = autoconfigure()
     n = Node('web1')
     print n['fqdn']
